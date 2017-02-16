@@ -7,10 +7,12 @@ import IntlRelativeFormat from 'intl-relativeformat';
 import includes from 'lodash/includes';
 import enGB from './translations/en-GB';
 import nlNL from './translations/nl-NL';
+import ru from './translations/ru';
 
 const messageMap = {
   'en-GB': enGB,
   'nl-NL': nlNL,
+  ru,
 };
 
 function isValidDate(date) {
@@ -40,7 +42,7 @@ const defaultI18n = {
       minimumFractionDigits: 0,
       maximumFractionDigits: 0,
     });
-    return locale === 'fr' ? formatter.format(num).replace(/([A-Z])\w+/g, '') : formatter.format(num);
+    return formatter.format(num);
   },
   date: locale => (date, options = {}) => {
     if (!isValidDate(date)) {
