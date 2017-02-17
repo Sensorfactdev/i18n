@@ -17,5 +17,10 @@ export default {
   "forms.profile.submit": "Update",
   "forms.reset-password.email-sent": "We have sent a password reset link to the email address of the account that you specified.Please check your email for this message, then click on the link.",
   "forms.reset-password.submit": "Request Password reset",
-  "forms.reset-password.email": "Email"
+  "forms.reset-password.email": "Email",
+  "forms.error": "Error",
+  "filters.time.6-hours": "6 hours",
+  "filters.time.one-day": "One day",
+  "filters.time.one-month": "One month",
+  "filters.time.one-year": "One year"
 };
