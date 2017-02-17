@@ -5,5 +5,6 @@ export default {
   "user.profile.edit": "Bewerk profiel",
   "user.logout": "Afmelden",
   "user.login": "Sign in",
-  "user.password.reset": "Wachtwoord resetten"
+  "user.password.reset": "Wachtwoord resetten",
+  "router.routes.graph": "Grafieken"
 };

@@ -5,5 +5,6 @@ export default {
   "user.profile.edit": "Edit profile",
   "user.logout": "Logout",
   "user.login": "Sign in",
-  "user.password.reset": "Reset password"
+  "user.password.reset": "Reset password",
+  "router.routes.graph": "Graphs"
 };
