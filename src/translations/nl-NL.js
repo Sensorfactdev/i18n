@@ -1,10 +1,21 @@
 export default {
   "graph.measurements.current": "Stroom metingen",
-  "graph.measurements.select.hint": "Selecteer een asset om de grafiek te zien",
+  "graph.measurements.select.hint": "Selecteer een of meerdere asset om de grafiek te zien",
   "branding.app": "{app}",
   "user.profile.edit": "Bewerk profiel",
   "user.logout": "Afmelden",
-  "user.login": "Sign in",
+  "user.login": "Inloggen",
   "user.password.reset": "Wachtwoord resetten",
-  "router.routes.graph": "Grafieken"
+  "router.routes.graph": "Grafieken",
+  "forms.login.username": "Gebruikersnaam of email",
+  "forms.login.password": "Wachtwoord",
+  "forms.login.submit": "Login",
+  "forms.profile.firstName": "Voornaam",
+  "forms.profile.lastName": "Achternaam",
+  "forms.profile.email": "Email",
+  "forms.profile.updated": "Profiel geupdate",
+  "forms.profile.submit": "Update",
+  "forms.reset-password.email-sent": "We have sent a password reset link to the email address of the account that you specified.Please check your email for this message, then click on the link.",
+  "forms.reset-password.submit": "Request Password reset",
+  "forms.reset-password.email": "Email"
 };
