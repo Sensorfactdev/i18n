@@ -13,14 +13,15 @@ export default {
   "forms.profile.firstName": "Voornaam",
   "forms.profile.lastName": "Achternaam",
   "forms.profile.email": "Email",
-  "forms.profile.updated": "Profiel geupdate",
+  "forms.profile.updated": "Profiel geüpdatet",
   "forms.profile.submit": "Update",
-  "forms.reset-password.email-sent": "We have sent a password reset link to the email address of the account that you specified.Please check your email for this message, then click on the link.",
-  "forms.reset-password.submit": "Request Password reset",
+  "forms.reset-password.email-sent": "Wij hebben een wachtwoord herstel link gestuurd naar het door u opgegeven mailadres. Bekijk uw email en klik op de link in de mail. ",
+  "forms.reset-password.submit": "Vraag een wachtwoord herstel aan",
   "forms.reset-password.email": "Email",
-  "forms.error": "Error",
-  "filters.time.6-hours": "6 hours",
-  "filters.time.one-day": "One day",
-  "filters.time.one-month": "One month",
-  "filters.time.one-year": "One year"
+  "forms.error": "Fout",
+  "filters.time.6-hours": "6 uur",
+  "filters.time.one-day": "Een dag",
+  "filters.time.one-month": "Een maand",
+  "filters.time.one-year": "Een jaar",
+  "router.routes.benchmarks": "Benchmarks"
 };

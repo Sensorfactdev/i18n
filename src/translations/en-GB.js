@@ -1,5 +1,5 @@
 export default {
-  "graph.measurements.current": "Current measurements",
+  "graph.measurements.current": "Asset current",
   "graph.measurements.select.hint": "Select one or more asset to see the graph",
   "branding.app": "{app}",
   "user.profile.edit": "Edit profile",
@@ -22,5 +22,6 @@ export default {
   "filters.time.6-hours": "6 hours",
   "filters.time.one-day": "One day",
   "filters.time.one-month": "One month",
-  "filters.time.one-year": "One year"
+  "filters.time.one-year": "One year",
+  "router.routes.benchmarks": "Benchmarks"
 };

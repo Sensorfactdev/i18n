@@ -11,7 +11,7 @@ export default {
   "forms.login.password": "Password",
   "forms.login.submit": "Login",
   "forms.profile.firstName": "First name",
-  "forms.profile.lastName": "First name",
+  "forms.profile.lastName": "Last Name",
   "forms.profile.email": "Email",
   "forms.profile.updated": "Profile updated",
   "forms.profile.submit": "Update",
@@ -22,5 +22,6 @@ export default {
   "filters.time.6-hours": "6 hours",
   "filters.time.one-day": "One day",
   "filters.time.one-month": "One month",
-  "filters.time.one-year": "One year"
+  "filters.time.one-year": "One year",
+  "router.routes.benchmarks": "Benchmarks"
 };
