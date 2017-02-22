@@ -23,5 +23,6 @@ export default {
   "filters.time.one-day": "One day",
   "filters.time.one-month": "One month",
   "filters.time.one-year": "One year",
-  "router.routes.benchmarks": "Benchmarks"
+  "router.routes.benchmarks": "Benchmarks",
+  "graph.energy.select.hint": "Select a category to see the overview"
 };
