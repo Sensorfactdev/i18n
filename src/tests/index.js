@@ -35,7 +35,7 @@ describe('i18n', () => {
     describe('should return the correct string for simple translate', () => {
       it('en-GB', () => {
         const i18n = getI18n('en-GB');
-        expect(i18n.text('graph.measurements.current')).to.equal('Current measurements');
+        expect(i18n.text('graph.measurements.current')).to.equal('Asset current');
       });
       it('nl-NL', () => {
         const i18n = getI18n('nl-NL');
@@ -67,24 +67,30 @@ describe('i18n', () => {
   });
   describe('currency', () => {
     describe('should return the correctly formatted number', () => {
+      describe('for small numbers', () => {
+        it('nl-NL', () => {
+          const i18n = getI18n('nl-NL');
+          expect(i18n.currency(0.064, 'EUR')).to.equal('€ 0,06');
+        });
+      });
       describe('GBP for locale', () => {
         it('en-GB', () => {
           const i18n = getI18n('en-GB');
-          expect(i18n.currency(10000, 'GBP')).to.equal('£10,000');
+          expect(i18n.currency(10000, 'GBP')).to.equal('£10,000.00');
         });
         it('nl-NL', () => {
           const i18n = getI18n('nl-NL');
-          expect(i18n.currency(10000, 'GBP')).to.equal('£ 10.000');
+          expect(i18n.currency(10000, 'GBP')).to.equal('£ 10.000,00');
         });
       });
       describe('EUR for locale', () => {
         it('en-GB', () => {
           const i18n = getI18n('en-GB');
-          expect(i18n.currency(10000, 'EUR')).to.equal('€10,000');
+          expect(i18n.currency(10000, 'EUR')).to.equal('€10,000.00');
         });
         it('nl-NL', () => {
           const i18n = getI18n('nl-NL');
-          expect(i18n.currency(10000, 'EUR')).to.equal('€ 10.000');
+          expect(i18n.currency(10000, 'EUR')).to.equal('€ 10.000,00');
         });
       });
     });

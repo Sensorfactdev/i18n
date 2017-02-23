@@ -39,8 +39,8 @@ const defaultI18n = {
     const formatter = new IntlPolyfill.NumberFormat(locale, {
       style: 'currency',
       currency: currencyCode,
-      minimumFractionDigits: 0,
-      maximumFractionDigits: 0,
+      // minimumFractionDigits: 0,
+      // maximumFractionDigits: 0,
     });
     return formatter.format(num);
   },
