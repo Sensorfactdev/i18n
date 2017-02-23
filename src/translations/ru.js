@@ -25,5 +25,6 @@ export default {
   "filters.time.one-year": "One year",
   "router.routes.benchmarks": "Benchmarks",
   "graph.energy.select.hint": "Select a category to see the overview",
-  "graph.energy.consumption": "Energy by KG"
+  "graph.energy.consumption": "Energy by KG",
+  "filters.time.one-week": "One week"
 };
