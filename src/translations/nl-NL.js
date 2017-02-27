@@ -26,5 +26,6 @@ export default {
   "router.routes.benchmarks": "Benchmarks",
   "graph.energy.select.hint": "Selecteer een categorie om het overzicht te zien",
   "graph.energy.consumption": "Energieverbruik",
-  "filters.time.one-week": "Een week"
+  "filters.time.one-week": "Een week",
+  "router.routes.tasks": "Taken"
 };
