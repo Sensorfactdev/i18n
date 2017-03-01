@@ -31,5 +31,6 @@ export default {
   "forms.login.remember": "Remember me",
   "forms.profile.current-password": "Current password",
   "forms.profile.new-password": "New password",
-  "tasks.select.hint": "Select a task to see more details."
+  "tasks.select.hint": "Select a task to see more details.",
+  "forms.profile.password.updated": "Password updated"
 };

@@ -31,5 +31,6 @@ export default {
   "forms.login.remember": "Onthou mijn account",
   "forms.profile.current-password": "Huidig wachtwoord",
   "forms.profile.new-password": "Nieuw wachtwoord",
-  "tasks.select.hint": "Selecteer een taak om meer informatie te zien."
+  "tasks.select.hint": "Selecteer een taak om meer informatie te zien.",
+  "forms.profile.password.updated": "Wachtwoord is geupdate"
 };
