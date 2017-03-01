@@ -7,11 +7,13 @@ import IntlRelativeFormat from 'intl-relativeformat';
 import includes from 'lodash/includes';
 import enGB from './translations/en-GB';
 import nlNL from './translations/nl-NL';
+import deDE from './translations/de-DE';
 import ru from './translations/ru';
 
 const messageMap = {
   'en-GB': enGB,
   'nl-NL': nlNL,
+  'de-DE': deDE,
   ru,
 };
 
@@ -39,8 +41,6 @@ const defaultI18n = {
     const formatter = new IntlPolyfill.NumberFormat(locale, {
       style: 'currency',
       currency: currencyCode,
-      // minimumFractionDigits: 0,
-      // maximumFractionDigits: 0,
     });
     return formatter.format(num);
   },

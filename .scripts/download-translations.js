@@ -1,6 +1,7 @@
 import { writeFileSync } from 'fs';
 import currentDutch from '../src/translations/nl-NL';
 import currentEnglish from '../src/translations/en-GB';
+import currentGerman from '../src/translations/de-DE';
 import currentRussian from '../src/translations/ru';
 
 const Tabletop = require('tabletop');
@@ -10,16 +11,19 @@ const fileMap = {
   NL: 'nl-NL',
   EN: 'en-GB',
   RU: 'ru',
+  DE: 'de-DE',
 };
 
 function mergeTranslations(translations) {
   const dutch = Object.assign({}, currentDutch, translations.NL);
   const english = Object.assign({}, currentEnglish, translations.EN);
   const russian = Object.assign({}, currentRussian, translations.RU);
+  const german = Object.assign({}, currentGerman, translations.DE);
   const newTranslations = {
     NL: dutch,
     EN: english,
     RU: russian,
+    DE: german,
   };
 
   return newTranslations;
