@@ -27,5 +27,9 @@ export default {
   "graph.energy.select.hint": "Select a category to see the overview",
   "graph.energy.consumption": "Energy by KG",
   "filters.time.one-week": "One week",
-  "router.routes.tasks": "Tasks"
+  "router.routes.tasks": "Tasks",
+  "forms.login.remember": "Remember me",
+  "forms.profile.current-password": "Current password",
+  "forms.profile.new-password": "New password",
+  "tasks.select.hint": "Select a task to see more details."
 };

@@ -27,5 +27,9 @@ export default {
   "graph.energy.select.hint": "Selecteer een categorie om het overzicht te zien",
   "graph.energy.consumption": "Energieverbruik",
   "filters.time.one-week": "Een week",
-  "router.routes.tasks": "Taken"
+  "router.routes.tasks": "Taken",
+  "forms.login.remember": "Onthou mijn account",
+  "forms.profile.current-password": "Huidig wachtwoord",
+  "forms.profile.new-password": "Nieuw wachtwoord",
+  "tasks.select.hint": "Selecteer een taak om meer informatie te zien."
 };
