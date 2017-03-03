@@ -33,5 +33,6 @@ export default {
   "forms.profile.new-password": "Nieuw wachtwoord",
   "tasks.select.hint": "Selecteer een taak om meer informatie te zien.",
   "forms.profile.password.updated": "Wachtwoord is geupdate",
-  "forms.profile.change-password": "Wijzig wachtwoord"
+  "forms.profile.change-password": "Wijzig wachtwoord",
+  "forms.profile.confirm-password": "Bevestig wachtwoord"
 };

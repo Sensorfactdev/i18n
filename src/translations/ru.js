@@ -33,5 +33,6 @@ export default {
   "forms.profile.new-password": "New password",
   "tasks.select.hint": "Select a task to see more details.",
   "forms.profile.password.updated": "Password updated",
-  "forms.profile.change-password": "Change password"
+  "forms.profile.change-password": "Change password",
+  "forms.profile.confirm-password": "Confirm Password"
 };
