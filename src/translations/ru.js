@@ -39,5 +39,6 @@ export default {
   "quick-scan.email.customerName": "Name of the customer",
   "quick-scan.email.customMessage": "Custom message",
   "quick-scan.email.saleGuyName": "Your name",
-  "quick-scan.email.emailSaleGuyName": "Your email"
+  "quick-scan.email.emailSaleGuyName": "Your email",
+  "quick-scan.email.customerEmail": "Email customer"
 };
