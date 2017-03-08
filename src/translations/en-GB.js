@@ -35,5 +35,9 @@ export default {
   "forms.profile.password.updated": "Password updated",
   "forms.profile.change-password": "Change password",
   "forms.profile.confirm-password": "Confirm Password",
-  "filters.time.8-hours": "8 hours"
+  "filters.time.8-hours": "8 hours",
+  "quick-scan.email.customerName": "Name of the customer",
+  "quick-scan.email.customMessage": "Custom message",
+  "quick-scan.email.saleGuyName": "Your name",
+  "quick-scan.email.emailSaleGuyName": "Your email"
 };

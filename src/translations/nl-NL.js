@@ -35,5 +35,9 @@ export default {
   "forms.profile.password.updated": "Wachtwoord is geupdate",
   "forms.profile.change-password": "Wijzig wachtwoord",
   "forms.profile.confirm-password": "Bevestig wachtwoord",
-  "filters.time.8-hours": "8 uur"
+  "filters.time.8-hours": "8 uur",
+  "quick-scan.email.customerName": "Naam van de klant",
+  "quick-scan.email.customMessage": "Custom message",
+  "quick-scan.email.saleGuyName": "Your name",
+  "quick-scan.email.emailSaleGuyName": "Your email"
 };

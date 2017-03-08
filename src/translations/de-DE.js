@@ -35,5 +35,9 @@ export default {
   "filters.time.one-year": "Ein Jahr",
   "tasks.select.hint": "Wählen Sie eine Aufgabe, um weitere Informationen zu sehen.",
   "forms.profile.confirm-password": "Confirm Password",
-  "filters.time.8-hours": "Acht Stunden"
+  "filters.time.8-hours": "Acht Stunden",
+  "quick-scan.email.customerName": "Name of the customer",
+  "quick-scan.email.customMessage": "Custom message",
+  "quick-scan.email.saleGuyName": "Your name",
+  "quick-scan.email.emailSaleGuyName": "Your email"
 };
