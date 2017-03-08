@@ -34,5 +34,6 @@ export default {
   "tasks.select.hint": "Selecteer een taak om meer informatie te zien.",
   "forms.profile.password.updated": "Wachtwoord is geupdate",
   "forms.profile.change-password": "Wijzig wachtwoord",
-  "forms.profile.confirm-password": "Bevestig wachtwoord"
+  "forms.profile.confirm-password": "Bevestig wachtwoord",
+  "filters.time.8-hours": "8 uur"
 };

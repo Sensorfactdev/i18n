@@ -34,5 +34,6 @@ export default {
   "tasks.select.hint": "Select a task to see more details.",
   "forms.profile.password.updated": "Password updated",
   "forms.profile.change-password": "Change password",
-  "forms.profile.confirm-password": "Confirm Password"
+  "forms.profile.confirm-password": "Confirm Password",
+  "filters.time.8-hours": "8 hours"
 };

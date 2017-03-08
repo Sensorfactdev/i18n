@@ -34,5 +34,6 @@ export default {
   "filters.time.one-month": "Ein Monat",
   "filters.time.one-year": "Ein Jahr",
   "tasks.select.hint": "Wählen Sie eine Aufgabe, um weitere Informationen zu sehen.",
-  "forms.profile.confirm-password": "Confirm Password"
+  "forms.profile.confirm-password": "Confirm Password",
+  "filters.time.8-hours": "Acht Stunden"
 };
