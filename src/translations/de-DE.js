@@ -42,5 +42,6 @@ export default {
   "quick-scan.email.emailSaleGuyName": "Your email",
   "quick-scan.email.customerEmail": "Email customer",
   "graph.measurements.components": "Components",
-  "router.routes.analysis": "Analysis"
+  "router.routes.analysis": "Analysis",
+  "benchmarks.inline.saving": "{efficiency} more efficienct. Saving {savings} per year"
 };
