@@ -45,5 +45,6 @@ export default {
   "router.routes.analysis": "Analysis",
   "benchmarks.inline.saving": "{efficiency} savings potential: {savings}",
   "benchmarks.inline.usage-in-periode": "Usage in periode",
-  "graph.measurements.components.select": "Select one or more component(s)"
+  "graph.measurements.components.select": "Select one or more component(s)",
+  "graph.measurements.components.select.not-allowed": "You are not allowed to select component while comparing machines"
 };
