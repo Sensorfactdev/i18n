@@ -44,5 +44,6 @@ export default {
   "graph.measurements.components": "Onderdelen",
   "router.routes.analysis": "Analyse",
   "benchmarks.inline.saving": "{efficiency} besparings potentieel: {savings}",
-  "benchmarks.inline.usage-in-periode": "Verbruik in periode"
+  "benchmarks.inline.usage-in-periode": "Verbruik in periode",
+  "graph.measurements.components.select": "Selecteer één of meer onderdelen"
 };

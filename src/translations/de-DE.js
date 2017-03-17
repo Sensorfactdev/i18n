@@ -44,5 +44,6 @@ export default {
   "graph.measurements.components": "Components",
   "router.routes.analysis": "Analysis",
   "benchmarks.inline.saving": "{efficiency} savings potential: {savings}",
-  "benchmarks.inline.usage-in-periode": "Usage in periode"
+  "benchmarks.inline.usage-in-periode": "Usage in periode",
+  "graph.measurements.components.select": "Select one or more component(s)"
 };
