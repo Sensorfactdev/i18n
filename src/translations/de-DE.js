@@ -1,5 +1,5 @@
 export default {
-  "graph.measurements.current": "Strommessungen",
+  "graph.measurements.current": "Energieverbrauch",
   "graph.measurements.select.hint": "Wählen Sie einen oder mehrere Vermögens um die Grafik zu sehen",
   "graph.energy.select.hint": "Wähle eine Kategorie aus, um einen Überblick zu erhalten",
   "graph.energy.consumption": "Energieverbrauch",
@@ -34,17 +34,19 @@ export default {
   "filters.time.one-month": "Ein Monat",
   "filters.time.one-year": "Ein Jahr",
   "tasks.select.hint": "Wählen Sie eine Aufgabe, um weitere Informationen zu sehen.",
-  "forms.profile.confirm-password": "Confirm Password",
+  "forms.profile.confirm-password": "Passwort bestätigen",
   "filters.time.8-hours": "Acht Stunden",
   "quick-scan.email.customerName": "Name of the customer",
   "quick-scan.email.customMessage": "Custom message",
   "quick-scan.email.saleGuyName": "Your name",
   "quick-scan.email.emailSaleGuyName": "Your email",
   "quick-scan.email.customerEmail": "Email customer",
-  "graph.measurements.components": "Components",
-  "router.routes.analysis": "Analysis",
+  "graph.measurements.components": "Komponenten",
+  "router.routes.analysis": "Analyse",
   "benchmarks.inline.saving": "{efficiency} savings potential: {savings}",
   "benchmarks.inline.usage-in-periode": "Usage in periode",
   "graph.measurements.components.select": "Select one or more component(s)",
-  "graph.measurements.components.select.not-allowed": "You are not allowed to select component while comparing machines"
+  "graph.measurements.components.select.not-allowed": "You are not allowed to select component while comparing machines",
+  "messages.error.no-assets.header": "Oeps, we could not find any assets",
+  "messages.error.no-assets.body": "Try adjusting the date range to see some assets"
 };

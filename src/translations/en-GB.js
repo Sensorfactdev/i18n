@@ -1,5 +1,5 @@
 export default {
-  "graph.measurements.current": "Asset current",
+  "graph.measurements.current": "Energy consumption",
   "graph.measurements.select.hint": "Select one or more asset(s) to see the graph",
   "branding.app": "{app}",
   "user.profile.edit": "Edit profile",
@@ -46,5 +46,7 @@ export default {
   "benchmarks.inline.saving": "{efficiency} savings potential: {savings}",
   "benchmarks.inline.usage-in-periode": "Usage in periode",
   "graph.measurements.components.select": "Select one or more component(s)",
-  "graph.measurements.components.select.not-allowed": "You are not allowed to select component while comparing machines"
+  "graph.measurements.components.select.not-allowed": "You are not allowed to select component while comparing machines",
+  "messages.error.no-assets.header": "Oeps, we could not find any assets",
+  "messages.error.no-assets.body": "Try adjusting the date range to see some assets"
 };

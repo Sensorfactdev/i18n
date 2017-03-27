@@ -1,5 +1,5 @@
 export default {
-  "graph.measurements.current": "Stroom metingen",
+  "graph.measurements.current": "Energieverbruik",
   "graph.measurements.select.hint": "Selecteer een of meerdere asset om de grafiek te zien",
   "branding.app": "{app}",
   "user.profile.edit": "Profiel bewerken",
@@ -37,14 +37,16 @@ export default {
   "forms.profile.confirm-password": "Bevestig wachtwoord",
   "filters.time.8-hours": "8 uur",
   "quick-scan.email.customerName": "Naam van de klant",
-  "quick-scan.email.customMessage": "Custom message",
-  "quick-scan.email.saleGuyName": "Your name",
-  "quick-scan.email.emailSaleGuyName": "Your email",
+  "quick-scan.email.customMessage": "Custom bericht",
+  "quick-scan.email.saleGuyName": "Uw naam",
+  "quick-scan.email.emailSaleGuyName": "Uw email",
   "quick-scan.email.customerEmail": "Email klant",
   "graph.measurements.components": "Onderdelen",
   "router.routes.analysis": "Analyse",
   "benchmarks.inline.saving": "{efficiency} besparings potentieel: {savings}",
   "benchmarks.inline.usage-in-periode": "Verbruik in periode",
   "graph.measurements.components.select": "Selecteer één of meer onderdelen",
-  "graph.measurements.components.select.not-allowed": "You are not allowed to select component while comparing machines"
+  "graph.measurements.components.select.not-allowed": "Het is niet toegestaan componenten te selecteren wanneer machines worden vergeleken",
+  "messages.error.no-assets.header": "Oeps, we could not find any assets",
+  "messages.error.no-assets.body": "Try adjusting the date range to see some assets"
 };
