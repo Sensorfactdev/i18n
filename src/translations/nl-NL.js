@@ -47,6 +47,7 @@ export default {
   "benchmarks.inline.usage-in-periode": "Verbruik in periode",
   "graph.measurements.components.select": "Selecteer één of meer onderdelen",
   "graph.measurements.components.select.not-allowed": "Het is niet toegestaan componenten te selecteren wanneer machines worden vergeleken",
-  "messages.error.no-assets.header": "Oeps, we could not find any assets",
-  "messages.error.no-assets.body": "Try adjusting the date range to see some assets"
+  "messages.error.no-assets.header": "Oeps, wij vonden geen data in de geselecteerde periode",
+  "messages.error.no-assets.body": "Selecteer een andere bereik om data te zien",
+  "benchmarks.inline.savings-potential": "Savings Potential"
 };
