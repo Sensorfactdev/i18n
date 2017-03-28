@@ -49,5 +49,6 @@ export default {
   "graph.measurements.components.select.not-allowed": "Het is niet toegestaan componenten te selecteren wanneer machines worden vergeleken",
   "messages.error.no-assets.header": "Oeps, wij vonden geen data in de geselecteerde periode",
   "messages.error.no-assets.body": "Selecteer een andere bereik om data te zien",
-  "benchmarks.inline.savings-potential": "Savings Potential"
+  "benchmarks.inline.savings-potential": "Savings Potential",
+  "benchmarks.inline.total-savings-potential": "Total Savings Potential"
 };

@@ -49,5 +49,6 @@ export default {
   "graph.measurements.components.select.not-allowed": "You are not allowed to select component while comparing machines",
   "messages.error.no-assets.header": "Oeps, we could not find any assets",
   "messages.error.no-assets.body": "Try adjusting the date range to see some assets",
-  "benchmarks.inline.savings-potential": "Savings Potential"
+  "benchmarks.inline.savings-potential": "Savings Potential",
+  "benchmarks.inline.total-savings-potential": "Total Savings Potential"
 };
