@@ -50,5 +50,6 @@ export default {
   "messages.error.no-assets.header": "Oeps, we could not find any assets",
   "messages.error.no-assets.body": "Try adjusting the date range to see some assets",
   "benchmarks.inline.savings-potential": "Savings Potential",
-  "benchmarks.inline.total-savings-potential": "Total Savings Potential"
+  "benchmarks.inline.total-savings-potential": "Total Savings Potential",
+  "date-picker.select-range": "Select range"
 };

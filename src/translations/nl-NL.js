@@ -50,5 +50,6 @@ export default {
   "messages.error.no-assets.header": "Oeps, wij vonden geen data in de geselecteerde periode",
   "messages.error.no-assets.body": "Selecteer een andere bereik om data te zien",
   "benchmarks.inline.savings-potential": "Savings Potential",
-  "benchmarks.inline.total-savings-potential": "Total Savings Potential"
+  "benchmarks.inline.total-savings-potential": "Total Savings Potential",
+  "date-picker.select-range": "Select range"
 };
