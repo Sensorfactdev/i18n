@@ -49,9 +49,9 @@ export default {
   "graph.measurements.components.select.not-allowed": "Het is niet toegestaan componenten te selecteren wanneer machines worden vergeleken",
   "messages.error.no-assets.header": "Oeps, wij vonden geen data in de geselecteerde periode",
   "messages.error.no-assets.body": "Selecteer een andere bereik om data te zien",
-  "benchmarks.inline.savings-potential": "Savings Potential",
-  "benchmarks.inline.total-savings-potential": "Total Savings Potential",
-  "date-picker.select-range": "Select range",
-  "lists.items.select-all": "Select all",
-  "lists.items.deselect-all": "Deselect all"
+  "benchmarks.inline.savings-potential": "Besparingspotentie",
+  "benchmarks.inline.total-savings-potential": "Totale besparingspotentie",
+  "date-picker.select-range": "Selecteer periode",
+  "lists.items.select-all": "Selecteer alles",
+  "lists.items.deselect-all": "Deselecteer alles"
 };
