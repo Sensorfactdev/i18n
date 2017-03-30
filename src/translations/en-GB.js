@@ -51,5 +51,7 @@ export default {
   "messages.error.no-assets.body": "Try adjusting the date range to see some measurements",
   "benchmarks.inline.savings-potential": "Savings Potential",
   "benchmarks.inline.total-savings-potential": "Total Savings Potential",
-  "date-picker.select-range": "Select range"
+  "date-picker.select-range": "Select range",
+  "lists.items.select-all": "Select all",
+  "lists.items.deselect-all": "Deselect all"
 };
