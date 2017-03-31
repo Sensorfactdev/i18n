@@ -53,5 +53,11 @@ export default {
   "benchmarks.inline.total-savings-potential": "Total Savings Potential",
   "date-picker.select-range": "Select range",
   "lists.items.select-all": "Select all",
-  "lists.items.deselect-all": "Deselect all"
+  "lists.items.deselect-all": "Deselect all",
+  "feedback.heading": "Leave some feedback",
+  "feedback.button": "Feedback",
+  "feedback.input.kind-of-feedback": "Your emotion",
+  "feedback.input.email": "Your email",
+  "feedback.input.feedback-text": "Your feedback",
+  "feedback.submit": "Submit"
 };
