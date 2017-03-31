@@ -54,10 +54,10 @@ export default {
   "date-picker.select-range": "Selecteer periode",
   "lists.items.select-all": "Selecteer alles",
   "lists.items.deselect-all": "Deselecteer alles",
-  "feedback.heading": "Leave some feedback",
+  "feedback.heading": "We are happy to see you are taking some time to improve our product.",
   "feedback.button": "Feedback",
-  "feedback.input.kind-of-feedback": "Your emotion",
+  "feedback.input.kind-of-feedback": "How did you experience this page?",
   "feedback.input.email": "Your email",
-  "feedback.input.feedback-text": "Your feedback",
+  "feedback.input.feedback-text": "Can you explain that a bit more?",
   "feedback.submit": "Send feedback"
 };
