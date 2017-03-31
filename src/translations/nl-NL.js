@@ -59,5 +59,8 @@ export default {
   "feedback.input.kind-of-feedback": "How did you experience this page?",
   "feedback.input.email": "Your email",
   "feedback.input.feedback-text": "Can you explain that a bit more?",
-  "feedback.submit": "Send feedback"
+  "feedback.submit": "Send feedback",
+  "feedback.thanks": "Thank you!",
+  "feedback.received": "We received your feedback.",
+  "feedback.close": "Close panel"
 };
