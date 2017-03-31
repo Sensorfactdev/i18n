@@ -59,5 +59,5 @@ export default {
   "feedback.input.kind-of-feedback": "Your emotion",
   "feedback.input.email": "Your email",
   "feedback.input.feedback-text": "Your feedback",
-  "feedback.submit": "Submit"
+  "feedback.submit": "Send feedback"
 };
