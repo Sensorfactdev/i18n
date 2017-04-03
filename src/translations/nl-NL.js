@@ -54,13 +54,16 @@ export default {
   "date-picker.select-range": "Selecteer periode",
   "lists.items.select-all": "Selecteer alles",
   "lists.items.deselect-all": "Deselecteer alles",
-  "feedback.heading": "We are happy to see you are taking some time to improve our product.",
+  "feedback.heading": "Bedankt dat u de tijd heeft genomen om ons product te verbeteren.",
   "feedback.button": "Feedback",
-  "feedback.input.kind-of-feedback": "How did you experience this page?",
+  "feedback.input.kind-of-feedback": "Hoe heeft u deze pagina ervaren?",
   "feedback.input.email": "Your email",
-  "feedback.input.feedback-text": "Can you explain that a bit more?",
-  "feedback.submit": "Send feedback",
-  "feedback.thanks": "Thank you!",
-  "feedback.received": "We received your feedback.",
-  "feedback.close": "Close panel"
+  "feedback.input.feedback-text": "Kunt u dit verder toelichten?",
+  "feedback.submit": "Stuur feedback",
+  "feedback.thanks": "Dankuwel!",
+  "feedback.received": "Wij hebben uw feedback ontvangen.",
+  "feedback.close": "Sluit scherm",
+  "graph.range.view.months": "Maanden",
+  "graph.range.view.days": "Dagen",
+  "graph.range.view.hours": "Uren"
 };

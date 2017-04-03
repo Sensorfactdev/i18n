@@ -62,5 +62,8 @@ export default {
   "feedback.submit": "Send feedback",
   "feedback.thanks": "Thank you!",
   "feedback.received": "We received your feedback.",
-  "feedback.close": "Close panel"
+  "feedback.close": "Close panel",
+  "graph.range.view.months": "Months",
+  "graph.range.view.days": "Days",
+  "graph.range.view.hours": "Hours"
 };
