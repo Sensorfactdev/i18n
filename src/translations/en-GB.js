@@ -65,5 +65,7 @@ export default {
   "feedback.close": "Close panel",
   "graph.range.view.months": "Months",
   "graph.range.view.days": "Days",
-  "graph.range.view.hours": "Hours"
+  "graph.range.view.hours": "Hours",
+  "errors.generic.title": "Uh-oh!",
+  "error.generic.try-login": "Try to login again"
 };

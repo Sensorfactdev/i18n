@@ -65,5 +65,7 @@ export default {
   "feedback.close": "Sluit scherm",
   "graph.range.view.months": "Maanden",
   "graph.range.view.days": "Dagen",
-  "graph.range.view.hours": "Uren"
+  "graph.range.view.hours": "Uren",
+  "errors.generic.title": "Uh-oh!",
+  "error.generic.try-login": "Try to login again"
 };
