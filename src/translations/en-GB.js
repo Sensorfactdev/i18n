@@ -67,5 +67,7 @@ export default {
   "graph.range.view.days": "Days",
   "graph.range.view.hours": "Hours",
   "errors.generic.title": "Uh-oh!",
-  "error.generic.try-login": "Try to login again"
+  "error.generic.try-login": "Try to login again",
+  "messages.error.no-selected-assets.body": "Try selecting one or more assets to see the graph",
+  "messages.error.no-selected-assets.header": "No selected assets"
 };
