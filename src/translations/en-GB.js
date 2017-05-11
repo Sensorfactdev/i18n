@@ -69,5 +69,6 @@ export default {
   "errors.generic.title": "Uh-oh!",
   "error.generic.try-login": "Try to login again",
   "messages.error.no-selected-assets.body": "Try selecting one or more assets to see the graph",
-  "messages.error.no-selected-assets.header": "No selected assets"
+  "messages.error.no-selected-assets.header": "No selected assets",
+  "messages.error.no-measurements.body": "No measurments found for current selection"
 };

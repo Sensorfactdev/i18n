@@ -66,8 +66,9 @@ export default {
   "graph.range.view.months": "Maanden",
   "graph.range.view.days": "Dagen",
   "graph.range.view.hours": "Uren",
-  "errors.generic.title": "Uh-oh!",
-  "error.generic.try-login": "Try to login again",
-  "messages.error.no-selected-assets.body": "Try selecting one or more assets to see the graph",
-  "messages.error.no-selected-assets.header": "No selected assets"
+  "errors.generic.title": "Oeps!",
+  "error.generic.try-login": "Probeer opnieuw in te loggen",
+  "messages.error.no-selected-assets.body": "Selecteer een of meerdere asset om de grafiek te zien",
+  "messages.error.no-selected-assets.header": "Geen assets geselecteerd",
+  "messages.error.no-measurements.body": "No measurments found for current selection"
 };
