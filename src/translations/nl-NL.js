@@ -70,5 +70,6 @@ export default {
   "error.generic.try-login": "Probeer opnieuw in te loggen",
   "messages.error.no-selected-assets.body": "Selecteer een of meerdere asset om de grafiek te zien",
   "messages.error.no-selected-assets.header": "Geen assets geselecteerd",
-  "messages.error.no-measurements.body": "No measurments found for current selection"
+  "messages.error.no-measurements.body": "No measurments found for current selection",
+  "forms.reset-password.not-match-error": "Provided passwords don't match"
 };
