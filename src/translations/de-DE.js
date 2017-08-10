@@ -72,5 +72,6 @@ export default {
   "messages.error.no-selected-assets.header": "No selected assets",
   "messages.error.no-measurements.body": "No measurments found for current selection",
   "forms.reset-password.not-match-error": "Provided passwords don't match",
-  "graph.exports.no-exports": "No exports available"
+  "graph.exports.no-exports": "No exports available",
+  "user-bar.settings": "Settings"
 };

@@ -72,5 +72,6 @@ export default {
   "messages.error.no-selected-assets.header": "Geen assets geselecteerd",
   "messages.error.no-measurements.body": "Geen data voor uw selectie",
   "forms.reset-password.not-match-error": "Opgegeven wachtwoord komt niet overeen",
-  "graph.exports.no-exports": "No exports available"
+  "graph.exports.no-exports": "No exports available",
+  "user-bar.settings": "Settings"
 };
