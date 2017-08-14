@@ -74,5 +74,6 @@ export default {
   "forms.reset-password.not-match-error": "Opgegeven wachtwoord komt niet overeen",
   "graph.exports.no-exports": "No exports available",
   "user-bar.settings": "Settings",
-  "date-picker.select.start-and-end": "Selecteer start en einddatum"
+  "date-picker.select.start-and-end": "Selecteer start en einddatum",
+  "graph.exports.select": "Selecteer"
 };

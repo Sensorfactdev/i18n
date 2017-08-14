@@ -74,5 +74,6 @@ export default {
   "forms.reset-password.not-match-error": "Provided passwords don't match",
   "graph.exports.no-exports": "No exports available",
   "user-bar.settings": "Settings",
-  "date-picker.select.start-and-end": "Select start and end date"
+  "date-picker.select.start-and-end": "Select start and end date",
+  "graph.exports.select": "Select"
 };
