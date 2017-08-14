@@ -51,7 +51,7 @@ export default {
   "messages.error.no-assets.body": "Selecteer een andere bereik om data te zien",
   "benchmarks.inline.savings-potential": "Besparings- potentie",
   "benchmarks.inline.total-savings-potential": "Totale besparingspotentie",
-  "date-picker.select-range": "Selecteer periode",
+  "date-picker.select-range": "Periode",
   "lists.items.select-all": "Selecteer alles",
   "lists.items.deselect-all": "Deselecteer alles",
   "feedback.heading": "Bedankt dat u de tijd heeft genomen om ons product te verbeteren.",
