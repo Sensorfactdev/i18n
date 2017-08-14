@@ -75,5 +75,6 @@ export default {
   "graph.exports.no-exports": "No exports available",
   "user-bar.settings": "Settings",
   "date-picker.select.start-and-end": "Selecteer start en einddatum",
-  "graph.exports.select": "Selecteer"
+  "graph.exports.select": "Selecteer",
+  "graph.exports.export-to-csv": "Export to .csv"
 };
