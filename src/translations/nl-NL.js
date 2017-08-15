@@ -76,5 +76,13 @@ export default {
   "user-bar.settings": "Settings",
   "date-picker.select.start-and-end": "Selecteer start en einddatum",
   "graph.exports.select": "Selecteer",
-  "graph.exports.export-to-csv": "Export to .csv"
+  "graph.exports.export-to-csv": "Export to .csv",
+  "info.sensor-data.heading": "Data van sensoren",
+  "info.sensor-data.description": "Deze pagina geeft u inzicht in de data van de sensoren. De data word weergegeven in kW (vermogen). Wij berekenen het vermogen door ruwe sensor data in Ampère te combineren met Voltage en een gemiddelde Power Factor (P = I * V * PF)",
+  "info.machine-level.heading": "Machine niveau",
+  "info.machine-level.description": "De grafiek word standaard op machine niveau weergegeven. Selecteer meerdere machines in het linker menu om machines met elkaar te vergelijken. Standaard worden uw machines gesorteerd op type om vergelijken makkelijker te maken.",
+  "info.component-level.heading": "Component niveau",
+  "info.component-level.description": "Wanneer u een enkele machine heeft geselecteerd en wij ook de componenten hiervan bemeteren, is het mogelijk deze ook in te zien. Selecteer eenvoudig de gewenste machine en selecteer vervolgens de beschikbare componenten door op de knoppen onder aan de grafiek te klikken.",
+  "info.data-export.heading": "Data exporteren",
+  "info.data-export.description": "Voor verdere analyses of om de ruwe data in te zien kunt u uw data exporteren naar .csv. Selecteerd de export knop naast de kalender zoekfunctie. Selecteer de week waarvan u data wilt exporteren. Uw .csv bestand word nu gedownload."
 };
