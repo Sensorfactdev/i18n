@@ -87,9 +87,10 @@ export default {
   "info.data-export.description": "To enable further analysis or to view the raw measurements it is possible to export data to .csv. Select the .csv export button next to the \"calendar\" date selector. Select the week of which you want a data export. Select export to .csv. Your data is now being downloaded.",
   "info.close-info": "Close info",
   "graph.tooltip.time.unit": "Hour",
-  "graph.quick-filter.day": "24 uur",
-  "graph.quick-filter.hour": "1 uur",
+  "graph.quick-filter.day": "24 h",
+  "graph.quick-filter.hour": "1 hour",
   "graph.quick-filter.month": "1 m",
   "graph.quick-filter.week": "1 w",
-  "graph.quick-filter.year": "1 j"
+  "graph.quick-filter.year": "1 Y",
+  "graph.range.view.minutes": "Minutes"
 };

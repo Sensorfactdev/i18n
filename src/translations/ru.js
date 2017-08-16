@@ -91,5 +91,6 @@ export default {
   "graph.quick-filter.hour": "1 uur",
   "graph.quick-filter.month": "1 m",
   "graph.quick-filter.week": "1 w",
-  "graph.quick-filter.year": "1 j"
+  "graph.quick-filter.year": "1 j",
+  "graph.range.view.minutes": "Minutes"
 };
