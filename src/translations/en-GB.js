@@ -80,11 +80,16 @@ export default {
   "info.sensor-data.heading": "Sensor Data",
   "info.sensor-data.description": "This page gives you insights in your sensor data. The data is displayed in kW (Power). We calculate the Power by multiplying the raw sensor data in Ampere (A) with an assumed Voltage and average Power Factor (P = I * V * PF)",
   "info.machine-level.heading": "Machine level",
-  "info.machine-level.description": "De grafiek word standaard op machine niveau weergegeven. Selecteer meerdere machines in het linker menu om machines met elkaar te vergelijken. Standaard worden uw machines gesorteerd op type om vergelijken makkelijker te maken.",
+  "info.machine-level.description": "The graph is displayed on a machine level by default. Select multiple machines in the menu on the left to compare machines with eachother. Your machines are being categorised based on their type to facilitate benchmarking.",
   "info.component-level.heading": "Component level",
-  "info.component-level.description": "Wanneer u een enkele machine heeft geselecteerd en wij ook de componenten hiervan bemeteren, is het mogelijk deze ook in te zien. Selecteer eenvoudig de gewenste machine en selecteer vervolgens de beschikbare componenten door op de knoppen onder aan de grafiek te klikken.",
+  "info.component-level.description": "When only one machine is selected and we measure its components, you are able to select the components. Simply select one machine and select the desired component by clicking on the buttons below the graph.",
   "info.data-export.heading": "Export data",
-  "info.data-export.description": "Voor verdere analyses of om de ruwe data in te zien kunt u uw data exporteren naar .csv. Selecteerd de export knop naast de kalender zoekfunctie. Selecteer de week waarvan u data wilt exporteren. Uw .csv bestand word nu gedownload.",
+  "info.data-export.description": "To enable further analysis or to view the raw measurements it is possible to export data to .csv. Select the .csv export button next to the \"calendar\" date selector. Select the week of which you want a data export. Select export to .csv. Your data is now being downloaded.",
   "info.close-info": "Close info",
-  "graph.tooltip.time.unit": "Hour"
+  "graph.tooltip.time.unit": "Hour",
+  "graph.quick-filter.day": "24 uur",
+  "graph.quick-filter.hour": "1 uur",
+  "graph.quick-filter.month": "1 m",
+  "graph.quick-filter.week": "1 w",
+  "graph.quick-filter.year": "1 j"
 };

@@ -86,5 +86,10 @@ export default {
   "info.data-export.heading": "Data exporteren",
   "info.data-export.description": "Voor verdere analyses of om de ruwe data in te zien kunt u uw data exporteren naar .csv. Selecteerd de export knop naast de kalender zoekfunctie. Selecteer de week waarvan u data wilt exporteren. Uw .csv bestand word nu gedownload.",
   "info.close-info": "Sluit info",
-  "graph.tooltip.time.unit": "Uur"
+  "graph.tooltip.time.unit": "Uur",
+  "graph.quick-filter.day": "24 uur",
+  "graph.quick-filter.hour": "1 uur",
+  "graph.quick-filter.month": "1 m",
+  "graph.quick-filter.week": "1 w",
+  "graph.quick-filter.year": "1 j"
 };
