@@ -85,5 +85,6 @@ export default {
   "info.component-level.description": "Wanneer u een enkele machine heeft geselecteerd en wij ook de componenten hiervan bemeteren, is het mogelijk deze ook in te zien. Selecteer eenvoudig de gewenste machine en selecteer vervolgens de beschikbare componenten door op de knoppen onder aan de grafiek te klikken.",
   "info.data-export.heading": "Data exporteren",
   "info.data-export.description": "Voor verdere analyses of om de ruwe data in te zien kunt u uw data exporteren naar .csv. Selecteerd de export knop naast de kalender zoekfunctie. Selecteer de week waarvan u data wilt exporteren. Uw .csv bestand word nu gedownload.",
-  "info.close-info": "Close info"
+  "info.close-info": "Close info",
+  "graph.tooltip.time.unit": "Uur"
 };
