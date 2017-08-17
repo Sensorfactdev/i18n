@@ -3,6 +3,7 @@ import currentDutch from '../src/translations/nl-NL';
 import currentEnglish from '../src/translations/en-GB';
 import currentGerman from '../src/translations/de-DE';
 import currentRussian from '../src/translations/ru';
+import currentFrench from '../src/translations/fr-FR'
 
 const Tabletop = require('tabletop');
 const yargs = require('yargs');
@@ -12,6 +13,7 @@ const fileMap = {
   EN: 'en-GB',
   RU: 'ru',
   DE: 'de-DE',
+  FR: 'fr-FR',
 };
 
 function mergeTranslations(translations) {
@@ -19,11 +21,13 @@ function mergeTranslations(translations) {
   const english = Object.assign({}, currentEnglish, translations.EN);
   const russian = Object.assign({}, currentRussian, translations.RU);
   const german = Object.assign({}, currentGerman, translations.DE);
+  const french = Object.assign({}, currentFrench, translations.FR);
   const newTranslations = {
     NL: dutch,
     EN: english,
     RU: russian,
     DE: german,
+    FR: french,
   };
 
   return newTranslations;

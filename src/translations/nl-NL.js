@@ -72,7 +72,7 @@ export default {
   "messages.error.no-selected-assets.header": "Geen assets geselecteerd",
   "messages.error.no-measurements.body": "Geen data voor uw selectie",
   "forms.reset-password.not-match-error": "Opgegeven wachtwoord komt niet overeen",
-  "graph.exports.no-exports": "No exports available",
+  "graph.exports.no-exports": "Geen exports beschikbaar",
   "user-bar.settings": "Settings",
   "date-picker.select.start-and-end": "Selecteer start en einddatum",
   "graph.exports.select": "Selecteer",
