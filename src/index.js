@@ -8,12 +8,14 @@ import includes from 'lodash/includes';
 import enGB from './translations/en-GB';
 import nlNL from './translations/nl-NL';
 import deDE from './translations/de-DE';
+import frFR from './translations/fr-FR';
 import ru from './translations/ru';
 
 const messageMap = {
   'en-GB': enGB,
   'nl-NL': nlNL,
   'de-DE': deDE,
+  'fr-FR': frFR,
   ru,
 };
 
