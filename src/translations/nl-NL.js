@@ -25,7 +25,7 @@ export default {
   "filters.time.one-year": "Een jaar",
   "router.routes.benchmarks": "Benchmarks",
   "graph.energy.select.hint": "Selecteer een categorie om het overzicht te zien",
-  "graph.energy.consumption": "Energieverbruik",
+  "graph.energy.consumption": "Vermogen",
   "filters.time.one-week": "Een week",
   "router.routes.tasks": "Taken",
   "forms.login.remember": "Onthoud mijn account",
@@ -92,5 +92,14 @@ export default {
   "graph.quick-filter.month": "1 m",
   "graph.quick-filter.week": "1 w",
   "graph.quick-filter.year": "1 j",
-  "graph.range.view.minutes": "Minuten"
+  "graph.range.view.minutes": "Minuten",
+  "generic.button-text.back": "Terug ",
+  "machine-details.notes": "Notes",
+  "machine-details.fused-power": "Fused Power",
+  "machine-details.power": "Power",
+  "machine-details.installation-date": "Installation Date",
+  "machine-details.running-hours": "Running Hours",
+  "machine-details.power-factor": "Power Factor",
+  "machine-details.connection-type": "Connection Type",
+  "machine-details.voltage": "Voltage"
 };
