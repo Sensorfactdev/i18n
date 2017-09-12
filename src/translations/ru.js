@@ -72,9 +72,9 @@ export default {
   "messages.error.no-selected-assets.header": "No selected assets",
   "messages.error.no-measurements.body": "No measurments found for current selection",
   "forms.reset-password.not-match-error": "Provided passwords don't match",
+  "graph.exports.no-exports": "No exports available",
   "date-picker.select.start-and-end": "Select start and end date",
   "graph.exports.export-to-csv": "Export to .csv",
-  "graph.exports.no-exports": "No exports available",
   "graph.exports.select": "Select",
   "graph.quick-filter.day": "24 uur",
   "graph.quick-filter.hour": "1 uur",
@@ -105,5 +105,6 @@ export default {
   "machine-details.model": "Model",
   "machine-details.type": "Type",
   "machine-details.location": "Location",
-  "machine-details.production-line": "Production Line"
+  "machine-details.production-line": "Production Line",
+  "graph.analysis.auto-refresh": "Auto-refresh every min."
 };
