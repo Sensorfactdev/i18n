@@ -1,5 +1,5 @@
 export default {
-  "graph.measurements.current": "Energieverbruik",
+  "graph.measurements.current": "Vermogen",
   "graph.measurements.select.hint": "Selecteer een of meerdere asset om de grafiek te zien",
   "branding.app": "{app}",
   "user.profile.edit": "Profiel bewerken",
@@ -94,12 +94,17 @@ export default {
   "graph.quick-filter.year": "1 j",
   "graph.range.view.minutes": "Minuten",
   "generic.button-text.back": "Terug ",
-  "machine-details.notes": "Notes",
-  "machine-details.fused-power": "Fused Power",
-  "machine-details.power": "Power",
-  "machine-details.installation-date": "Installation Date",
-  "machine-details.running-hours": "Running Hours",
+  "machine-details.notes": "Notities",
+  "machine-details.fused-power": "Afgezekerd vermogen",
+  "machine-details.power": "Vermogen",
+  "machine-details.installation-date": "Installatiedatum",
+  "machine-details.running-hours": "Draaiuren",
   "machine-details.power-factor": "Power Factor",
-  "machine-details.connection-type": "Connection Type",
-  "machine-details.voltage": "Voltage"
+  "machine-details.connection-type": "Connectie type",
+  "machine-details.voltage": "Voltage",
+  "machine-details.model": "Model",
+  "machine-details.type": "Type",
+  "machine-details.location": "Locatie",
+  "machine-details.production-line": "Productielijn",
+  "graph.analysis.auto-refresh": "Auto-refresh every min."
 };

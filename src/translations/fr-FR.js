@@ -93,7 +93,7 @@ export default {
   "graph.quick-filter.week": "1 s",
   "graph.quick-filter.year": "1 an",
   "graph.range.view.minutes": "Minutes",
-  "generic.button-text.back": "Back",
+  "generic.button-text.back": "Retour",
   "machine-details.notes": "Notes",
   "machine-details.fused-power": "Fused Power",
   "machine-details.power": "Power",
@@ -101,5 +101,10 @@ export default {
   "machine-details.running-hours": "Running Hours",
   "machine-details.power-factor": "Power Factor",
   "machine-details.connection-type": "Connection Type",
-  "machine-details.voltage": "Voltage"
+  "machine-details.voltage": "Voltage",
+  "machine-details.model": "Model",
+  "machine-details.type": "Type",
+  "machine-details.location": "Location",
+  "machine-details.production-line": "Production Line",
+  "graph.analysis.auto-refresh": "Auto-refresh every min."
 };

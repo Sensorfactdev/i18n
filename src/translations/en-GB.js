@@ -1,5 +1,5 @@
 export default {
-  "graph.measurements.current": "Energy consumption",
+  "graph.measurements.current": "Power",
   "graph.measurements.select.hint": "Select one or more asset(s) to see the graph",
   "branding.app": "{app}",
   "user.profile.edit": "Edit profile",
@@ -101,5 +101,10 @@ export default {
   "machine-details.running-hours": "Running Hours",
   "machine-details.power-factor": "Power Factor",
   "machine-details.connection-type": "Connection Type",
-  "machine-details.voltage": "Voltage"
+  "machine-details.voltage": "Voltage",
+  "machine-details.model": "Model",
+  "machine-details.type": "Type",
+  "machine-details.location": "Location",
+  "machine-details.production-line": "Production Line",
+  "graph.analysis.auto-refresh": "Auto-refresh every min."
 };
