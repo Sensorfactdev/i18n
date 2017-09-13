@@ -106,5 +106,6 @@ export default {
   "machine-details.type": "Type",
   "machine-details.location": "Location",
   "machine-details.production-line": "Production Line",
-  "graph.analysis.auto-refresh": "Auto-refresh every min."
+  "graph.analysis.auto-refresh": "Auto-refresh every min.",
+  "machine-details.frequency-regulated": "Frequency Regulated"
 };
