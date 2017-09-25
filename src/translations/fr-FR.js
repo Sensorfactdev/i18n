@@ -132,5 +132,10 @@ export default {
   "router.routes.savings": "",
   "savings.subroutes.contract-benchmark": "",
   "savings.subroutes.extra": "",
-  "savings.subroutes.consumption": ""
+  "savings.subroutes.consumption": "",
+  "settings.account": "",
+  "settings.language": "",
+  "settings.notifications": "",
+  "generic.new-feature": "",
+  "generic.name": ""
 };

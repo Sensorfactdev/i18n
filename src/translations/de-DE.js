@@ -132,5 +132,10 @@ export default {
   "router.routes.savings": "Savings",
   "savings.subroutes.contract-benchmark": "Contract benchmark",
   "savings.subroutes.extra": "Extra services",
-  "savings.subroutes.consumption": "Standby Power"
+  "savings.subroutes.consumption": "Standby Power",
+  "settings.account": "Account",
+  "settings.language": "Language settings",
+  "settings.notifications": "Notifications",
+  "generic.new-feature": "New feature coming soon!",
+  "generic.name": "Name"
 };

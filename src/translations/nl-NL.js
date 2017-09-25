@@ -132,5 +132,10 @@ export default {
   "router.routes.savings": "Besparing",
   "savings.subroutes.contract-benchmark": "Contract vergelijking",
   "savings.subroutes.extra": "Extra diensten",
-  "savings.subroutes.consumption": "Sluipverbruik"
+  "savings.subroutes.consumption": "Sluipverbruik",
+  "settings.account": "Account",
+  "settings.language": "Language settings",
+  "settings.notifications": "Notifications",
+  "generic.new-feature": "New feature coming soon!",
+  "generic.name": "Name"
 };
