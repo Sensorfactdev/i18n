@@ -109,7 +109,7 @@ export default {
   "graph.analysis.auto-refresh": "Iedere minuut autom. verversen",
   "machine-details.frequency-regulated": "Frequentieregelaar",
   "contract-benchmark.heading": "Contract vergelijking",
-  "contract-benchmark.step-1.intro": "Vul de volgende vragen in en zie meteen hoeveel u betaald ten opzichte van andere bedrijven.",
+  "contract-benchmark.step-1.intro": "Vul de volgende vragen in en zie meteen hoeveel u betaalt ten opzichte van andere bedrijven.",
   "contract-benchmark.step-1.form-heading": "Hoe hoog was uw laatste energierekening?",
   "contract-benchmark.step-1.form-description": "Vul hieronder het totaal aantal afgenomen kWh in en de totale afrekening excl. BTW van uw laatste energiefactuur. Hiervoor hoeft u geen onderscheid te maken in verschillende tarieven.",
   "contract-benchmark.step-1.missing-fields": "De eerste twee velden zijn verplicht.",
@@ -117,7 +117,7 @@ export default {
   "contract-benchmark.step-1.kWh-tooltip": "Vul hier uw totaal elektra verbruik in van uw laatste energiefactuur (in kWh).",
   "contract-benchmark.step-1.select-provider": "Kies uw energieleverancier.",
   "contract-benchmark.step-1.compare": "Vergelijk",
-  "contract-benchmark.step-2.intro": "Vergelijking tussen andere in dezelfde industrie.",
+  "contract-benchmark.step-2.intro": "Vergelijking tussen anderen in dezelfde industrie.",
   "contract-benchmark.step-2.energy-consumption": "Energieverbruik",
   "contract-benchmark.step-2.paying-too-much": "U betaald teveel.",
   "contract-benchmark.step-2.cheaper": "Uw contract kan mogelijk goedkoper.",
@@ -134,8 +134,9 @@ export default {
   "savings.subroutes.extra": "Extra diensten",
   "savings.subroutes.consumption": "Sluipverbruik",
   "settings.account": "Account",
-  "settings.language": "Language settings",
-  "settings.notifications": "Notifications",
-  "generic.new-feature": "New feature coming soon!",
-  "generic.name": "Name"
+  "settings.language": "Taal instellingen",
+  "settings.notifications": "Notificaties",
+  "generic.new-feature": "Binnenkort beschikbaar!",
+  "generic.name": "Naam",
+  "graph.measurements.energy": "Energy"
 };

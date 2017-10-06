@@ -137,5 +137,6 @@ export default {
   "settings.language": "Language settings",
   "settings.notifications": "Notifications",
   "generic.new-feature": "New feature coming soon!",
-  "generic.name": "Name"
+  "generic.name": "Name",
+  "graph.measurements.energy": "Energy"
 };
