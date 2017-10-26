@@ -1,4 +1,7 @@
 import { writeFileSync } from 'fs';
+
+// When these files don't exist you can create them with this content:
+// module.exports = {};
 import currentDutch from '../src/translations/nl-NL';
 import currentEnglish from '../src/translations/en-GB';
 import currentGerman from '../src/translations/de-DE';
