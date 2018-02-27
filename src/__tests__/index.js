@@ -72,6 +72,12 @@ describe('i18n', () => {
       expect(i18n.text('branding.app', { app: 'Pizza' })).toEqual('Pizza');
     });
   });
+  describe('supportedLocale', () => {
+    it('should be able check which locale are supported', () => {
+      const i18n = getI18n(mockTranslations, 'en_GB');
+      expect(i18n.supportedLocale).toEqual(['en_GB', 'nl_NL', 'de_DE', 'fr_FR', 'es_ES']);
+    });
+  });
   describe('text', () => {
     describe('should return the correct string for simple translate', () => {
       it('en_GB', () => {

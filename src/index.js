@@ -62,21 +62,22 @@ const defaultI18n = {
 };
 
 export function getI18n(translations, locale) {
-  const supportedLocales = ['en_GB', 'nl_NL', 'de_DE', 'fr_FR', 'es_ES'];
-  if (!includes(supportedLocales, locale)) {
-    throw new Error(`Unsupported locale. supported locales are ${supportedLocales.join(', ')}`);
+  const supportedLocale = ['en_GB', 'nl_NL', 'de_DE', 'fr_FR', 'es_ES'];
+  if (!includes(supportedLocale, locale)) {
+    throw new Error(`Unsupported locale. supported locales are ${supportedLocale.join(', ')}`);
   }
 
   return {
     locale,
+    supportedLocale,
     text: defaultI18n.text(translations, locale),
     number: defaultI18n.number(translations, locale),
     date: defaultI18n.date(translations, locale),
     currency: defaultI18n.currency(translations, locale),
     formatRelative: defaultI18n.formatRelative(translations, locale),
     setLocale(newLocale) {
-      if (!includes(supportedLocales, locale)) {
-        throw new Error(`Unsupported locale. supported locales are ${supportedLocales.join(', ')}`);
+      if (!includes(supportedLocale, locale)) {
+        throw new Error(`Unsupported locale. supported locales are ${supportedLocale.join(', ')}`);
       }
 
       this.locale = newLocale;
