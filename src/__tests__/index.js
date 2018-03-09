@@ -1,4 +1,4 @@
-import { getI18n } from '../index';
+import { getI18n, props as i18nPropTypes } from '../index';
 
 const mockTranslations = [
   {
@@ -210,6 +210,28 @@ describe('i18n', () => {
         const options = { style: 'numeric' };
         expect(i18n.formatRelative(date, options)).toEqual('over 0 seconden');
       });
+    });
+  });
+  describe('PropTypes', () => {
+    it('should have proptype for `text`', () => {
+      expect(i18nPropTypes.text).toBeDefined();
+      expect(typeof i18nPropTypes.text).toEqual('function');
+    });
+    it('should have proptype for `number`', () => {
+      expect(i18nPropTypes.number).toBeDefined();
+      expect(typeof i18nPropTypes.number).toEqual('function');
+    });
+    it('should have proptype for `date`', () => {
+      expect(i18nPropTypes.date).toBeDefined();
+      expect(typeof i18nPropTypes.date).toEqual('function');
+    });
+    it('should have proptype for `currency`', () => {
+      expect(i18nPropTypes.currency).toBeDefined();
+      expect(typeof i18nPropTypes.currency).toEqual('function');
+    });
+    it('should have proptype for `formatRelative`', () => {
+      expect(i18nPropTypes.formatRelative).toBeDefined();
+      expect(typeof i18nPropTypes.formatRelative).toEqual('function');
     });
   });
 });

@@ -61,6 +61,21 @@ const defaultI18n = {
   },
 };
 
+function defaultFuncPropType(props, propName, componentName) {
+  if (typeof props[propName] !== 'function') {
+    return new Error(
+      'Invalid prop `' + propName + '` supplied to' +
+      ' `' + componentName + '`. Validation failed.'
+    );
+  }
+};
+
+export const props = Object.keys(defaultI18n)
+  .reduce((acc, curr) => {
+    acc[curr] = defaultFuncPropType;
+    return acc;
+  }, {});
+
 export function getI18n(translations, locale) {
   const supportedLocale = ['en_GB', 'nl_NL', 'de_DE', 'fr_FR', 'es_ES'];
   if (!includes(supportedLocale, locale)) {
@@ -92,4 +107,5 @@ export function getI18n(translations, locale) {
 
 export default {
   getI18n,
+  props,
 };
