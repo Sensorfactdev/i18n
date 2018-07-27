@@ -8,7 +8,6 @@
   },
   "license": "MIT",
   "scripts": {
-    "prepublish": ". ./.scripts/prepublish.sh",
     "test": "jest --coverage",
     "test-travis": "yarn test && cat ./coverage/lcov.info | coveralls"
   },
