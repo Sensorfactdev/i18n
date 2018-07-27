@@ -1,4 +1,4 @@
-import { getI18n, props as i18nPropTypes } from '../index';
+const { getI18n, props: i18nPropTypes } = require('../index');
 
 const mockTranslations = [
   {

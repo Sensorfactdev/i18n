@@ -14,12 +14,7 @@
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.js"
-    ],
-    "testResultsProcessor": "./node_modules/jest-junit"
-  },
-  "jest-junit": {
-    "suiteName": "i18n Tests",
-    "output": "./reports/junit.xml"
+    ]
   },
   "author": "Ramon Gebben <ramon@sensorfact.nl>",
   "devDependencies": {
@@ -27,8 +22,7 @@
     "eslint": "^3.6.0",
     "eslint-config-airbnb": "^12.0.0",
     "eslint-plugin-import": "^1.16.0",
-    "jest": "^21.2.1",
-    "jest-junit": "^3.1.0"
+    "jest": "^21.2.1"
   },
   "dependencies": {
     "intl": "^1.2.5",
