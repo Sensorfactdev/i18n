@@ -1,2 +1,9 @@
-src
-.babelrc
+reports
+coverage
+.vscode
+src/__tests__
+.eslintignore
+.eslintrc
+.gitignore
+.git
+.travis
