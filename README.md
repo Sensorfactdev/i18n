@@ -1,4 +1,7 @@
 # Sensorfact i18n
+[![npm version](https://badge.fury.io/js/%40sensorfactdev%2sf-i18n.svg)](https://badge.fury.io/js/%40sensorfactdev%2sf-i18n)
+[![Build Status](https://travis-ci.org/Sensorfactdev/sf-i18n.svg?branch=master)](https://travis-ci.org/Sensorfactdev/sf-i18n)
+[![Coverage Status](https://coveralls.io/repos/github/Sensorfactdev/sf-i18n/badge.svg)](https://coveralls.io/github/Sensorfactdev/sf-i18n)
 
 ## Usage
 
