@@ -31,25 +31,25 @@ const defaultI18n = {
     const formatter = new IntlMessageFormat(msg, toValidIntlLocale(locale));
     return formatter.format(value);
   },
-  number: (translations, locale) => (num) => {
+  number: (_, locale) => (num) => {
     const formatter = new IntlPolyfill.NumberFormat(toValidIntlLocale(locale));
     return formatter.format(num);
   },
-  currency: (translations, locale) => (num, currencyCode) => {
+  currency: (_, locale) => (num, currencyCode) => {
     const formatter = new IntlPolyfill.NumberFormat(toValidIntlLocale(locale), {
       style: 'currency',
       currency: currencyCode,
     });
     return formatter.format(num);
   },
-  date: (translations, locale) => (date, options = {}) => {
+  date: (_, locale) => (date, options = {}) => {
     if (!isValidDate(date)) {
       throw new Error('Invalid date, please pass only Date objects');
     }
     const formatter = new IntlPolyfill.DateTimeFormat(toValidIntlLocale(locale), options);
     return formatter.format(date);
   },
-  formatRelative: (translations, locale) => (date, options = {}) => {
+  formatRelative: (_, locale) => (date, options = {}) => {
     if (!isValidDate(date)) {
       throw new Error('Invalid date, please pass only Date objects');
     }
@@ -75,8 +75,10 @@ const props = Object.keys(defaultI18n)
     return acc;
   }, {});
 
+const getSupportedLocales = (translations = [{ en_GB: '' }]) => Object.keys(translations[0]).filter(x => x !== 'key');
+
 function getI18n(translations, locale) {
-  const supportedLocale = ['en_GB', 'nl_NL', 'de_DE', 'fr_FR', 'es_ES'];
+  const supportedLocale = getSupportedLocales(translations);
   if (!supportedLocale.includes(locale)) {
     throw new Error(`Unsupported locale. supported locales are ${supportedLocale.join(', ')}`);
   }
@@ -90,7 +92,7 @@ function getI18n(translations, locale) {
     currency: defaultI18n.currency(translations, locale),
     formatRelative: defaultI18n.formatRelative(translations, locale),
     setLocale(newLocale) {
-      if (!supportedLocale.includes(locale)) {
+      if (!supportedLocale.includes(newLocale)) {
         throw new Error(`Unsupported locale. supported locales are ${supportedLocale.join(', ')}`);
       }
 

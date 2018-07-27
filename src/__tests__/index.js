@@ -71,6 +71,11 @@ describe('i18n', () => {
       i18n.setLocale('nl_NL');
       expect(i18n.text('branding.app', { app: 'Pizza' })).toEqual('Pizza');
     });
+
+    it('should error when unsupported locale passed', () => {
+      const i18n = getI18n(mockTranslations, 'en_GB');
+      expect(() => i18n.setLocale('ru_RU')).toThrowError('Unsupported locale. supported locales are en_GB, nl_NL, de_DE, fr_FR, es_ES');
+    });
   });
   describe('supportedLocale', () => {
     it('should be able check which locale are supported', () => {
@@ -210,6 +215,13 @@ describe('i18n', () => {
         const options = { style: 'numeric' };
         expect(i18n.formatRelative(date, options)).toEqual('over 0 seconden');
       });
+
+      it('Error on invalid date', () => {
+        const i18n = getI18n(mockTranslations, 'en_GB');
+        const date = 'pizza';
+        const options = { style: 'numeric' };
+        expect(() => i18n.formatRelative(date, options)).toThrowError('Invalid date, please pass only Date objects');
+      });
     });
   });
   describe('PropTypes', () => {
@@ -233,5 +245,26 @@ describe('i18n', () => {
       expect(i18nPropTypes.formatRelative).toBeDefined();
       expect(typeof i18nPropTypes.formatRelative).toEqual('function');
     });
+
+    it('should return null when propType validation passes', () => {
+      expect(i18nPropTypes.text({ text: f => f }, 'text', 'Pizza')).toEqual(null);
+    });
+
+    const props = {
+      text: 'pizza',
+      number: 'pizza',
+      date: 'pizza',
+      currency: 'pizza',
+      formatRelative: 'pizza',
+    };
+
+    Object.keys(props)
+      .forEach((propType) => {
+        it(`Error on invalid prop passed for ${propType}`, () => {
+          const componentName = 'Pizza';
+          expect(i18nPropTypes[propType](props, propType, componentName))
+            .toEqual(new Error(`Invalid prop \`${propType}\` supplied to \`Pizza\`. Validation failed.`));
+        });
+      });
   });
 });
