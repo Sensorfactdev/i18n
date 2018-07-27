@@ -6,7 +6,7 @@
 ## Usage
 
 ```bash
-npm i @sensorfactdev/sf-i18n -S
+yarn add @sensorfactdev/sf-i18n
 ```
 
 ```javascript
