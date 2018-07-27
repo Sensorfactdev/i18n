@@ -6,4 +6,4 @@ src/__tests__
 .eslintrc
 .gitignore
 .git
-.travis
+.travis.yml
