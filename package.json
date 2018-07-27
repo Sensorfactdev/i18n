@@ -1,10 +1,10 @@
 {
-  "name": "@sensorfactdev/sf-i18n",
+  "name": "@sensorfactdev/i18n",
   "version": "2.0.0",
   "description": "Internationalisation client for translations managed in GraphQL",
   "repository": {
     "type": "git",
-    "url": "git@github.com:Sensorfactdev/sf-i18n.git"
+    "url": "git@github.com:Sensorfactdev/i18n.git"
   },
   "license": "MIT",
   "scripts": {
