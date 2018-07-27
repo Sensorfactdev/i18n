@@ -1,10 +1,10 @@
-import IntlPolyfill from 'intl';
-import 'intl/locale-data/jsonp/en';
-import 'intl/locale-data/jsonp/fr';
-import 'intl/locale-data/jsonp/nl';
-import IntlMessageFormat from 'intl-messageformat';
-import IntlRelativeFormat from 'intl-relativeformat';
-import includes from 'lodash/includes';
+const IntlPolyfill = require('intl');
+const IntlMessageFormat = require('intl-messageformat');
+const IntlRelativeFormat = require('intl-relativeformat');
+
+require('intl/locale-data/jsonp/en');
+require('intl/locale-data/jsonp/fr');
+require('intl/locale-data/jsonp/nl');
 
 function isValidDate(date) {
   return (date instanceof Date);
@@ -26,9 +26,6 @@ const defaultI18n = {
       : null;
 
     if (!msg) {
-      /* eslint-disable */
-      console.warn(`No translation key found for ${key}. Using provided key instead`);
-      /* eslint-disable */
       return key;
     }
     const formatter = new IntlMessageFormat(msg, toValidIntlLocale(locale));
@@ -64,21 +61,23 @@ const defaultI18n = {
 function defaultFuncPropType(props, propName, componentName) {
   if (typeof props[propName] !== 'function') {
     return new Error(
-      'Invalid prop `' + propName + '` supplied to' +
-      ' `' + componentName + '`. Validation failed.'
+      `Invalid prop \`${propName}\` supplied to \`${componentName}\`. Validation failed.`
     );
   }
-};
+  return null;
+}
 
-export const props = Object.keys(defaultI18n)
+const props = Object.keys(defaultI18n)
   .reduce((acc, curr) => {
+    /* eslint-disable no-param-reassign */
     acc[curr] = defaultFuncPropType;
+    /* eslint-enable no-param-reassign */
     return acc;
   }, {});
 
-export function getI18n(translations, locale) {
+function getI18n(translations, locale) {
   const supportedLocale = ['en_GB', 'nl_NL', 'de_DE', 'fr_FR', 'es_ES'];
-  if (!includes(supportedLocale, locale)) {
+  if (!supportedLocale.includes(locale)) {
     throw new Error(`Unsupported locale. supported locales are ${supportedLocale.join(', ')}`);
   }
 
@@ -91,7 +90,7 @@ export function getI18n(translations, locale) {
     currency: defaultI18n.currency(translations, locale),
     formatRelative: defaultI18n.formatRelative(translations, locale),
     setLocale(newLocale) {
-      if (!includes(supportedLocale, locale)) {
+      if (!supportedLocale.includes(locale)) {
         throw new Error(`Unsupported locale. supported locales are ${supportedLocale.join(', ')}`);
       }
 
@@ -105,7 +104,7 @@ export function getI18n(translations, locale) {
   };
 }
 
-export default {
+module.exports = {
   getI18n,
   props,
 };

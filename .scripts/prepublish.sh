@@ -1,7 +1,0 @@
-#!/bin/bash
-
-echo "=> Transpiling 'src' into ES5 ... \n"
-rm -rf ./dist
-NODE_ENV=production ./node_modules/.bin/babel --ignore tests,stories --plugins "transform-runtime" ./src --out-dir ./dist
-echo ""
-echo "=> Transpiling completed."
