@@ -5,3 +5,4 @@ dist
 coverage
 reports
 yarn-error.log
+.DS_Store
