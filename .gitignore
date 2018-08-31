@@ -1,7 +1,7 @@
 node_modules
 *.log
 .idea
-dist
+src
 coverage
 reports
 yarn-error.log
