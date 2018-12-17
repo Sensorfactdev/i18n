@@ -1,6 +1,6 @@
 {
   "name": "@sensorfactdev/i18n",
-  "version": "2.0.3",
+  "version": "2.1.0",
   "description": "Internationalisation client for translations managed in GraphQL",
   "repository": {
     "type": "git",
