@@ -11,7 +11,7 @@ const mockTranslations = [
   },
   {
     key: 'this.is.a.test.key.key.key',
-    en_GB: 'Testing a key',
+    en_GB: 'Testing a key 1',
     nl_NL: null,
     de_DE: null,
     fr_FR: null,
@@ -19,7 +19,7 @@ const mockTranslations = [
   },
   {
     key: 'this.is.a.a.test.key.key.key',
-    en_GB: 'Testing a key ',
+    en_GB: 'Testing a key 2',
     nl_NL: null,
     de_DE: null,
     fr_FR: null,
@@ -266,5 +266,11 @@ describe('i18n', () => {
             .toEqual(new Error(`Invalid prop \`${propType}\` supplied to \`Pizza\`. Validation failed.`));
         });
       });
+  });
+  describe('getKeyFromTranslation', () => {
+    it('return the key for a translation', () => {
+      const i18n = getI18n(mockTranslations, 'en_GB');
+      expect(i18n.getKeyFromTranslation('Power')).toEqual('graph.measurements.current');
+    });
   });
 });

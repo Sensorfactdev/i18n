@@ -77,6 +77,15 @@ const props = Object.keys(defaultI18n)
 
 const getSupportedLocales = (translations = [{ en_GB: '' }]) => Object.keys(translations[0]).filter(x => x !== 'key');
 
+const getKeyFromTranslation = (translation, locale, translations) => {
+  const values = translations.map((t) => t[locale]);
+  const index = values.indexOf(translation);
+
+  if (index === -1) return null;
+
+  return translations[index].key;
+}
+
 function getI18n(translations, locale) {
   const supportedLocale = getSupportedLocales(translations);
   if (!supportedLocale.includes(locale)) {
@@ -91,6 +100,7 @@ function getI18n(translations, locale) {
     date: defaultI18n.date(translations, locale),
     currency: defaultI18n.currency(translations, locale),
     formatRelative: defaultI18n.formatRelative(translations, locale),
+    getKeyFromTranslation: translation => getKeyFromTranslation(translation, locale, translations),
     setLocale(newLocale) {
       if (!supportedLocale.includes(newLocale)) {
         throw new Error(`Unsupported locale. supported locales are ${supportedLocale.join(', ')}`);
