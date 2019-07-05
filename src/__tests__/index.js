@@ -1,4 +1,7 @@
-const { getI18n, props: i18nPropTypes } = require('../index');
+const {
+  getI18n,
+  props: i18nPropTypes,
+} = require('../index');
 
 const mockTranslations = [
   {
@@ -42,7 +45,6 @@ const mockTranslations = [
     es_ES: null,
   },
 ];
-
 
 describe('i18n', () => {
   describe('getI18n', () => {
@@ -178,49 +180,24 @@ describe('i18n', () => {
       it('en_GB', () => {
         const i18n = getI18n(mockTranslations, 'en_GB');
         const date = new Date(1476875568085);
-        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        const options = {
+          weekday: 'long',
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric',
+        };
         expect(i18n.date(date, options)).toEqual('Wednesday, 19 October 2016');
       });
       it('nl_NL', () => {
         const i18n = getI18n(mockTranslations, 'nl_NL');
         const date = new Date(1476875568085);
-        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        const options = {
+          weekday: 'long',
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric',
+        };
         expect(i18n.date(date, options)).toEqual('woensdag 19 oktober 2016');
-      });
-    });
-  });
-  describe('formatRelative', () => {
-    describe('should return the relatively formatted date', () => {
-      it('en_GB', () => {
-        const i18n = getI18n(mockTranslations, 'en_GB');
-        const date = new Date(Date.now());
-        expect(i18n.formatRelative(date)).toEqual('now');
-      });
-      it('nl_NL', () => {
-        const i18n = getI18n(mockTranslations, 'nl_NL');
-        const date = new Date(Date.now());
-        expect(i18n.formatRelative(date)).toEqual('nu');
-      });
-    });
-    describe('should return the relatively formatted date from options', () => {
-      it('en_GB', () => {
-        const i18n = getI18n(mockTranslations, 'en_GB');
-        const date = new Date(Date.now());
-        const options = { style: 'numeric' };
-        expect(i18n.formatRelative(date, options)).toEqual('in 0 seconds');
-      });
-      it('nl_NL', () => {
-        const i18n = getI18n(mockTranslations, 'nl_NL');
-        const date = new Date(Date.now());
-        const options = { style: 'numeric' };
-        expect(i18n.formatRelative(date, options)).toEqual('over 0 seconden');
-      });
-
-      it('Error on invalid date', () => {
-        const i18n = getI18n(mockTranslations, 'en_GB');
-        const date = 'pizza';
-        const options = { style: 'numeric' };
-        expect(() => i18n.formatRelative(date, options)).toThrowError('Invalid date, please pass only Date objects');
       });
     });
   });
@@ -241,10 +218,6 @@ describe('i18n', () => {
       expect(i18nPropTypes.currency).toBeDefined();
       expect(typeof i18nPropTypes.currency).toEqual('function');
     });
-    it('should have proptype for `formatRelative`', () => {
-      expect(i18nPropTypes.formatRelative).toBeDefined();
-      expect(typeof i18nPropTypes.formatRelative).toEqual('function');
-    });
 
     it('should return null when propType validation passes', () => {
       expect(i18nPropTypes.text({ text: f => f }, 'text', 'Pizza')).toEqual(null);
@@ -255,7 +228,6 @@ describe('i18n', () => {
       number: 'pizza',
       date: 'pizza',
       currency: 'pizza',
-      formatRelative: 'pizza',
     };
 
     Object.keys(props)
