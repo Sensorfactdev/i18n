@@ -1,10 +1,13 @@
 const IntlPolyfill = require('intl');
 const IntlMessageFormat = require('intl-messageformat');
-const IntlRelativeFormat = require('intl-relativeformat');
 
+require('intl/locale-data/jsonp/de');
 require('intl/locale-data/jsonp/en');
+require('intl/locale-data/jsonp/es');
 require('intl/locale-data/jsonp/fr');
+require('intl/locale-data/jsonp/it');
 require('intl/locale-data/jsonp/nl');
+require('intl/locale-data/jsonp/pt');
 
 function isValidDate(date) {
   return (date instanceof Date);
@@ -49,19 +52,12 @@ const defaultI18n = {
     const formatter = new IntlPolyfill.DateTimeFormat(toValidIntlLocale(locale), options);
     return formatter.format(date);
   },
-  formatRelative: (_, locale) => (date, options = {}) => {
-    if (!isValidDate(date)) {
-      throw new Error('Invalid date, please pass only Date objects');
-    }
-    const formatter = new IntlRelativeFormat(toValidIntlLocale(locale), options);
-    return formatter.format(date);
-  },
 };
 
 function defaultFuncPropType(props, propName, componentName) {
   if (typeof props[propName] !== 'function') {
     return new Error(
-      `Invalid prop \`${propName}\` supplied to \`${componentName}\`. Validation failed.`
+      `Invalid prop \`${propName}\` supplied to \`${componentName}\`. Validation failed.`,
     );
   }
   return null;
@@ -78,13 +74,13 @@ const props = Object.keys(defaultI18n)
 const getSupportedLocales = (translations = [{ en_GB: '' }]) => Object.keys(translations[0]).filter(x => x !== 'key');
 
 const getKeyFromTranslation = (translation, locale, translations) => {
-  const values = translations.map((t) => t[locale]);
+  const values = translations.map(t => t[locale]);
   const index = values.indexOf(translation);
 
   if (index === -1) return null;
 
   return translations[index].key;
-}
+};
 
 function getI18n(translations, locale) {
   const supportedLocale = getSupportedLocales(translations);
@@ -99,7 +95,6 @@ function getI18n(translations, locale) {
     number: defaultI18n.number(translations, locale),
     date: defaultI18n.date(translations, locale),
     currency: defaultI18n.currency(translations, locale),
-    formatRelative: defaultI18n.formatRelative(translations, locale),
     getKeyFromTranslation: translation => getKeyFromTranslation(translation, locale, translations),
     setLocale(newLocale) {
       if (!supportedLocale.includes(newLocale)) {
