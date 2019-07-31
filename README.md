@@ -3,11 +3,13 @@
 [![Build Status](https://travis-ci.org/Sensorfactdev/i18n.svg?branch=master)](https://travis-ci.org/Sensorfactdev/i18n)
 [![Coverage Status](https://coveralls.io/repos/github/Sensorfactdev/i18n/badge.svg)](https://coveralls.io/github/Sensorfactdev/i18n)
 
-## Usage
+**Install**
 
 ```bash
-yarn add @sensorfactdev/sf-i18n
+yarn add @sensorfactdev/i18n
 ```
+
+**Example**
 
 ```javascript
 import { getI18n } from '@sensorfactdev/sf-i18n';
@@ -21,7 +23,7 @@ const translations = [
 ]
 
 const i18n = getI18n(translations, 'en_GB');
-i18n.text('some.id.you.want.to.translate');
+i18n.text('some.id.you.want.to.translate'); // 'Translated into English'
 i18n.number(10000);
 i18n.currency(10000, 'EUR');
 i18n.date(new Date());
