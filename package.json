@@ -1,6 +1,6 @@
 {
   "name": "@sensorfactdev/i18n",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Internationalisation client for translations managed in GraphQL",
   "repository": {
     "type": "git",
@@ -19,21 +19,21 @@
   },
   "author": "Ramon Gebben <ramon@sensorfact.nl>",
   "devDependencies": {
-    "@babel/cli": "^7.0.0",
-    "@babel/core": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
-    "coveralls": "^3.0.2",
-    "eslint": "^6.0.1",
-    "eslint-config-airbnb": "^17.1.1",
-    "eslint-plugin-import": "^2.18.0",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.14.2",
-    "jest": "^24.8.0"
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "coveralls": "^3.1.0",
+    "eslint": "^7.6.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.5",
+    "jest": "^26.3.0"
   },
   "dependencies": {
-    "intl": "^1.2.5",
-    "intl-locales-supported": "^1.0.0",
-    "intl-messageformat": "^6.0.0"
+    "@formatjs/intl-datetimeformat": "2.0.1",
+    "@formatjs/intl-numberformat": "^5.3.3",
+    "intl-messageformat": "^9.2.0"
   },
   "main": "lib/index.js"
 }
