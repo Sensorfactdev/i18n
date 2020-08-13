@@ -31,7 +31,7 @@
     "jest": "^26.3.0"
   },
   "dependencies": {
-    "@formatjs/intl-datetimeformat": "2.0.1",
+    "@formatjs/intl-datetimeformat": "^2.4.0",
     "@formatjs/intl-numberformat": "^5.3.3",
     "intl-messageformat": "^9.2.0"
   },
