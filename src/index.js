@@ -1,13 +1,21 @@
-const IntlPolyfill = require('intl');
-const IntlMessageFormat = require('intl-messageformat');
+require('@formatjs/intl-numberformat/polyfill');
+require('@formatjs/intl-numberformat/locale-data/de');
+require('@formatjs/intl-numberformat/locale-data/en-GB');
+require('@formatjs/intl-numberformat/locale-data/es');
+require('@formatjs/intl-numberformat/locale-data/fr');
+require('@formatjs/intl-numberformat/locale-data/it');
+require('@formatjs/intl-numberformat/locale-data/nl');
+require('@formatjs/intl-numberformat/locale-data/pt');
+require('@formatjs/intl-datetimeformat/polyfill');
+require('@formatjs/intl-datetimeformat/locale-data/de');
+require('@formatjs/intl-datetimeformat/locale-data/en-GB');
+require('@formatjs/intl-datetimeformat/locale-data/es');
+require('@formatjs/intl-datetimeformat/locale-data/fr');
+require('@formatjs/intl-datetimeformat/locale-data/it');
+require('@formatjs/intl-datetimeformat/locale-data/nl');
+require('@formatjs/intl-datetimeformat/locale-data/pt');
 
-require('intl/locale-data/jsonp/de');
-require('intl/locale-data/jsonp/en');
-require('intl/locale-data/jsonp/es');
-require('intl/locale-data/jsonp/fr');
-require('intl/locale-data/jsonp/it');
-require('intl/locale-data/jsonp/nl');
-require('intl/locale-data/jsonp/pt');
+const { IntlMessageFormat } = require('intl-messageformat');
 
 function isValidDate(date) {
   return (date instanceof Date);
@@ -35,11 +43,11 @@ const defaultI18n = {
     return formatter.format(value);
   },
   number: (_, locale) => (num) => {
-    const formatter = new IntlPolyfill.NumberFormat(toValidIntlLocale(locale));
+    const formatter = new Intl.NumberFormat(toValidIntlLocale(locale));
     return formatter.format(num);
   },
   currency: (_, locale) => (num, currencyCode) => {
-    const formatter = new IntlPolyfill.NumberFormat(toValidIntlLocale(locale), {
+    const formatter = new Intl.NumberFormat(toValidIntlLocale(locale), {
       style: 'currency',
       currency: currencyCode,
     });
@@ -49,7 +57,7 @@ const defaultI18n = {
     if (!isValidDate(date)) {
       throw new Error('Invalid date, please pass only Date objects');
     }
-    const formatter = new IntlPolyfill.DateTimeFormat(toValidIntlLocale(locale), options);
+    const formatter = new Intl.DateTimeFormat(toValidIntlLocale(locale), options);
     return formatter.format(date);
   },
 };
@@ -71,10 +79,10 @@ const props = Object.keys(defaultI18n)
     return acc;
   }, {});
 
-const getSupportedLocales = (translations = [{ en_GB: '' }]) => Object.keys(translations[0]).filter(x => x !== 'key');
+const getSupportedLocales = (translations = [{ en_GB: '' }]) => Object.keys(translations[0]).filter((x) => x !== 'key');
 
 const getKeyFromTranslation = (translation, locale, translations) => {
-  const values = translations.map(t => t[locale]);
+  const values = translations.map((t) => t[locale]);
   const index = values.indexOf(translation);
 
   if (index === -1) return null;
@@ -95,7 +103,9 @@ function getI18n(translations, locale) {
     number: defaultI18n.number(translations, locale),
     date: defaultI18n.date(translations, locale),
     currency: defaultI18n.currency(translations, locale),
-    getKeyFromTranslation: translation => getKeyFromTranslation(translation, locale, translations),
+    getKeyFromTranslation: (translation) => getKeyFromTranslation(
+      translation, locale, translations,
+    ),
     setLocale(newLocale) {
       if (!supportedLocale.includes(newLocale)) {
         throw new Error(`Unsupported locale. supported locales are ${supportedLocale.join(', ')}`);
