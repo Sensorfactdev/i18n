@@ -12,7 +12,7 @@ yarn add @sensorfactdev/i18n
 **Example**
 
 ```javascript
-import { getI18n } from '@sensorfactdev/sf-i18n';
+import { getI18n } from '@sensorfactdev/i18n';
 
 const translations = [
   {
@@ -28,4 +28,5 @@ i18n.number(10000);
 i18n.currency(10000, 'EUR');
 i18n.date(new Date());
 ```
+
 For more usage info check the unit tests or [MDN docs on Intl](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl).
