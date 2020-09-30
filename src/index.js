@@ -14,6 +14,7 @@ require('@formatjs/intl-datetimeformat/locale-data/fr');
 require('@formatjs/intl-datetimeformat/locale-data/it');
 require('@formatjs/intl-datetimeformat/locale-data/nl');
 require('@formatjs/intl-datetimeformat/locale-data/pt');
+require('@formatjs/intl-datetimeformat/add-all-tz');
 
 const { IntlMessageFormat } = require('intl-messageformat');
 
