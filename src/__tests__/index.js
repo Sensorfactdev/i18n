@@ -118,7 +118,7 @@ describe('i18n', () => {
     });
   });
   describe('number', () => {
-    describe('should return the correctly formatted number', () => {
+    describe('should return the correctly localized number', () => {
       it('en_GB', () => {
         const i18n = getI18n(mockTranslations, 'en_GB');
         expect(i18n.number(10000)).toEqual('10,000');
@@ -126,6 +126,28 @@ describe('i18n', () => {
       it('nl_NL', () => {
         const i18n = getI18n(mockTranslations, 'nl_NL');
         expect(i18n.number(10000)).toEqual('10.000');
+      });
+    });
+    describe('should return the correctly formatted number', () => {
+      const formatOptions = {
+        maximumFractionDigits: 2,
+        minimumFractionDigits: 2,
+      };
+      it('en_GB fraction', () => {
+        const i18n = getI18n(mockTranslations, 'en_GB');
+        expect(i18n.number(10000.1234, formatOptions)).toEqual('10,000.12');
+      });
+      it('en_GB integer', () => {
+        const i18n = getI18n(mockTranslations, 'en_GB');
+        expect(i18n.number(10000, formatOptions)).toEqual('10,000.00');
+      });
+      it('nl_NL fraction', () => {
+        const i18n = getI18n(mockTranslations, 'nl_NL');
+        expect(i18n.number(10000.1234, formatOptions)).toEqual('10.000,12');
+      });
+      it('nl_NL integer', () => {
+        const i18n = getI18n(mockTranslations, 'nl_NL');
+        expect(i18n.number(10000, formatOptions)).toEqual('10.000,00');
       });
     });
   });
@@ -185,7 +207,7 @@ describe('i18n', () => {
           year: 'numeric',
           month: 'long',
           day: 'numeric',
-          timeZone: 'Europe/Amsterdam'
+          timeZone: 'Europe/Amsterdam',
         };
         expect(i18n.date(date, options)).toEqual('Wednesday, 19 October 2016');
       });
@@ -197,7 +219,7 @@ describe('i18n', () => {
           year: 'numeric',
           month: 'long',
           day: 'numeric',
-          timeZone: 'Europe/Amsterdam'
+          timeZone: 'Europe/Amsterdam',
         };
         expect(i18n.date(date, options)).toEqual('woensdag 19 oktober 2016');
       });
@@ -222,7 +244,7 @@ describe('i18n', () => {
     });
 
     it('should return null when propType validation passes', () => {
-      expect(i18nPropTypes.text({ text: f => f }, 'text', 'Pizza')).toEqual(null);
+      expect(i18nPropTypes.text({ text: (f) => f }, 'text', 'Pizza')).toEqual(null);
     });
 
     const props = {
