@@ -199,7 +199,7 @@ describe('i18n', () => {
           year: 'numeric',
           month: 'long',
           day: 'numeric',
-          timeZone: 'Europe/Amsterdam'
+          timeZone: 'Europe/Amsterdam',
         };
         expect(i18n.date(date, options)).toEqual('Wednesday, 19 October 2016');
       });
@@ -211,7 +211,7 @@ describe('i18n', () => {
           year: 'numeric',
           month: 'long',
           day: 'numeric',
-          timeZone: 'Europe/Amsterdam'
+          timeZone: 'Europe/Amsterdam',
         };
         expect(i18n.date(date, options)).toEqual('woensdag 19 oktober 2016');
       });
@@ -236,7 +236,7 @@ describe('i18n', () => {
     });
 
     it('should return null when propType validation passes', () => {
-      expect(i18nPropTypes.text({ text: f => f }, 'text', 'Pizza')).toEqual(null);
+      expect(i18nPropTypes.text({ text: (f) => f }, 'text', 'Pizza')).toEqual(null);
     });
 
     const props = {
