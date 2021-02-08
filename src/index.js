@@ -1,3 +1,4 @@
+require('@formatjs/intl-locale/polyfill');
 require('@formatjs/intl-numberformat/polyfill');
 require('@formatjs/intl-numberformat/locale-data/de');
 require('@formatjs/intl-numberformat/locale-data/en-GB');
