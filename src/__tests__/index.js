@@ -133,13 +133,21 @@ describe('i18n', () => {
         maximumFractionDigits: 2,
         minimumFractionDigits: 2,
       };
-      it('en_GB', () => {
+      it('en_GB fraction', () => {
         const i18n = getI18n(mockTranslations, 'en_GB');
         expect(i18n.number(10000.1234, formatOptions)).toEqual('10,000.12');
       });
-      it('nl_NL', () => {
+      it('en_GB integer', () => {
+        const i18n = getI18n(mockTranslations, 'en_GB');
+        expect(i18n.number(10000, formatOptions)).toEqual('10,000.00');
+      });
+      it('nl_NL fraction', () => {
         const i18n = getI18n(mockTranslations, 'nl_NL');
         expect(i18n.number(10000.1234, formatOptions)).toEqual('10.000,12');
+      });
+      it('nl_NL integer', () => {
+        const i18n = getI18n(mockTranslations, 'nl_NL');
+        expect(i18n.number(10000, formatOptions)).toEqual('10.000,00');
       });
     });
   });
