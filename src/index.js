@@ -43,8 +43,8 @@ const defaultI18n = {
     const formatter = new IntlMessageFormat(msg, toValidIntlLocale(locale));
     return formatter.format(value);
   },
-  number: (_, locale) => (num) => {
-    const formatter = new Intl.NumberFormat(toValidIntlLocale(locale));
+  number: (_, locale) => (num, options = {}) => {
+    const formatter = new Intl.NumberFormat(toValidIntlLocale(locale), options);
     return formatter.format(num);
   },
   currency: (_, locale) => (num, currencyCode) => {

@@ -118,7 +118,7 @@ describe('i18n', () => {
     });
   });
   describe('number', () => {
-    describe('should return the correctly formatted number', () => {
+    describe('should return the correctly localized number', () => {
       it('en_GB', () => {
         const i18n = getI18n(mockTranslations, 'en_GB');
         expect(i18n.number(10000)).toEqual('10,000');
@@ -126,6 +126,20 @@ describe('i18n', () => {
       it('nl_NL', () => {
         const i18n = getI18n(mockTranslations, 'nl_NL');
         expect(i18n.number(10000)).toEqual('10.000');
+      });
+    });
+    describe('should return the correctly formatted number', () => {
+      const formatOptions = {
+        maximumFractionDigits: 2,
+        minimumFractionDigits: 2,
+      };
+      it('en_GB', () => {
+        const i18n = getI18n(mockTranslations, 'en_GB');
+        expect(i18n.number(10000.1234, formatOptions)).toEqual('10,000.12');
+      });
+      it('nl_NL', () => {
+        const i18n = getI18n(mockTranslations, 'nl_NL');
+        expect(i18n.number(10000.1234, formatOptions)).toEqual('10.000,12');
       });
     });
   });
