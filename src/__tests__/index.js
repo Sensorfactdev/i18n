@@ -156,27 +156,27 @@ describe('i18n', () => {
       describe('for small numbers', () => {
         it('nl_NL', () => {
           const i18n = getI18n(mockTranslations, 'nl_NL');
-          expect(i18n.currency(0.064, 'EUR')).toEqual('€ 0,06');
+          expect(i18n.currency(0.064, 'EUR')).toEqual('€ 0,064');
         });
       });
       describe('GBP for locale', () => {
         it('en_GB', () => {
           const i18n = getI18n(mockTranslations, 'en_GB');
-          expect(i18n.currency(10000, 'GBP')).toEqual('£10,000.00');
+          expect(i18n.currency(10000, 'GBP')).toEqual('£10,000.000');
         });
         it('nl_NL', () => {
           const i18n = getI18n(mockTranslations, 'nl_NL');
-          expect(i18n.currency(10000, 'GBP')).toEqual('£ 10.000,00');
+          expect(i18n.currency(10000, 'GBP')).toEqual('£ 10.000,000');
         });
       });
       describe('EUR for locale', () => {
         it('en_GB', () => {
           const i18n = getI18n(mockTranslations, 'en_GB');
-          expect(i18n.currency(10000, 'EUR')).toEqual('€10,000.00');
+          expect(i18n.currency(10000, 'EUR')).toEqual('€10,000.000');
         });
         it('nl_NL', () => {
           const i18n = getI18n(mockTranslations, 'nl_NL');
-          expect(i18n.currency(10000, 'EUR')).toEqual('€ 10.000,00');
+          expect(i18n.currency(10000, 'EUR')).toEqual('€ 10.000,000');
         });
       });
     });

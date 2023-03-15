@@ -52,6 +52,7 @@ const defaultI18n = {
     const formatter = new Intl.NumberFormat(toValidIntlLocale(locale), {
       style: 'currency',
       currency: currencyCode,
+	  minimumFractionDigits: 3,
     });
     return formatter.format(num);
   },
