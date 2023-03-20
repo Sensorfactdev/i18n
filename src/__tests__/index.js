@@ -153,6 +153,12 @@ describe('i18n', () => {
   });
   describe('currency', () => {
     describe('should return the correctly formatted number', () => {
+      describe('for smaller numbers', () => {
+        it('nl_NL', () => {
+          const i18n = getI18n(mockTranslations, 'nl_NL');
+          expect(i18n.currency(0.095, 'EUR', 3)).toEqual('€ 0,095');
+        });
+      });
       describe('for small numbers', () => {
         it('nl_NL', () => {
           const i18n = getI18n(mockTranslations, 'nl_NL');

@@ -48,10 +48,11 @@ const defaultI18n = {
     const formatter = new Intl.NumberFormat(toValidIntlLocale(locale), options);
     return formatter.format(num);
   },
-  currency: (_, locale) => (num, currencyCode) => {
+  currency: (_, locale) => (num, currencyCode, fractionDigits = 2) => {
     const formatter = new Intl.NumberFormat(toValidIntlLocale(locale), {
       style: 'currency',
       currency: currencyCode,
+	  minimumFractionDigits: fractionDigits,
     });
     return formatter.format(num);
   },
