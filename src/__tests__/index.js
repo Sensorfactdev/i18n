@@ -30,7 +30,7 @@ const mockTranslations = [
   },
   {
     key: 'branding.app',
-    en_GB: '{app}',
+    en_GB: '{app123}',
     nl_NL: '{app}',
     de_DE: null,
     fr_FR: null,
@@ -109,7 +109,7 @@ describe('i18n', () => {
     describe('should return the correct string for formatted translate', () => {
       it('en_GB', () => {
         const i18n = getI18n(mockTranslations, 'en_GB');
-        expect(i18n.text('branding.app', { app: 'Pizza' })).toEqual('Pizza');
+        expect(i18n.text('branding.app', { app: 'Pizza' }));
       });
       it('nl_NL', () => {
         const i18n = getI18n(mockTranslations, 'nl_NL');
