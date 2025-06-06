@@ -37,12 +37,15 @@ const defaultI18n = {
     const msg = (translationMessage && translationMessage[locale])
       ? translationMessage[locale]
       : null;
-
-    if (!msg) {
+    if (!msg ) {
       return key;
     }
     const formatter = new IntlMessageFormat(msg, toValidIntlLocale(locale));
-    return formatter.format(value);
+    try {
+      return formatter.format(value);
+    } catch (e) {
+      return msg;
+    }
   },
   number: (_, locale) => (num, options = {}) => {
     const formatter = new Intl.NumberFormat(toValidIntlLocale(locale), options);
